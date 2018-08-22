@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css"></style>
+
+	<script src="finalp.js"></script>
+
+	<script type="text/javascript"></script>
+
+	<title>Log in Page</title>
+
+</head>
+
+<body>
+
+	<h1>Registered Users:</h1>
+
+<form action="login.php" method="POST">
+
+  <label> username:<br></label>
+
+  <input type="text" name="loginusername"><br>
+  <label>password:<br></label>
+  <input type="password" name="loginpassword">
+  <br>
+  <br>
+   <input type="submit" value="Log in" name="login">
+
+</form>
+
+<br />
+
+<h1>New Users:</h1>
+
+<form action="signup.php" method="POST">
+
+  <label>First name:</label>
+  <input type="text" name="sfirstname"><br>
+  <label>Last name:</label>
+  <input type="text" name="slastname"><br>
+  <label>phone no:</label>
+  <input type="text" name="sphone"><br>
+  <label>Email id:</label>
+  <input type="text" name="semail"><br>
+  <label>username:</label>
+  <input type="text" name="signusername"><br>
+  <label>password :</label>
+  <input name="signpassword" id="password" type="password" onkeyup='passMatch();' />
+
+</label><br>
+
+<label>Retype password:
+
+  <input type="password" name="Retypepassword" id="Retypepassword"  onkeyup='passMatch();' /> 
+  <span id='nomatch'></span></label><br>
+
+<input type="submit" value="sign up" name="signup">
+
+</form>
+
+</body>
+
+</html>

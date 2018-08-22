@@ -1,0 +1,9 @@
+var passMatch = function() {
+    if(document.getElementById('password').value ==
+    document.getElementById('Retypepassword').value) {
+    document.getElementById('nomatch').innerHTML = '';
+}else {
+    document.getElementById('nomatch').style.color = 'red';
+    document.getElementById('nomatch').innerHTML = "passwords don't match!";
+    }
+}
